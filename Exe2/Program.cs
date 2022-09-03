@@ -6,8 +6,14 @@ Console.Write("Введите M: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int summ = GetSumm(m, n);
-System.Console.WriteLine(summ);
+
+if (m > n)
+    System.Console.WriteLine("Вы ввели неверное чиcло!");
+else
+{
+    int summ = GetSumm(m, n);
+    System.Console.WriteLine(summ);
+}
 
 
 int GetSumm(int start, int end)
